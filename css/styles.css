@@ -54,6 +54,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p{
   margin-top: 0;
   margin-bottom: 0;
@@ -65,6 +66,7 @@ ul{
   margin-bottom: 0;
   padding-left: 0;
 }
+
 img{
   display: block;
 }
@@ -80,8 +82,42 @@ img{
 /* цвет текста на страничках в портфолио #F4F4FD */
 /* белый #FFFFFF */
 
+/* ========================================================CONTEINER=============================================*/
+.container{
+width: 1158px;
+margin: 0 auto;
+padding: 0 15px;
+/* background-color: green; */
+}
+
+ /*========================================================/CONTAINER=========================================== */
+
+ /* ========================================================SECTION============================================= */
+.section{
+  padding-top:120px;
+  padding-bottom:120px;
+}
+ /* =======================================================/SECTION============================================= */
+
+ /* =====================================================HEADER================================================= */
+ .header{
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+ }
+
+ .container-header{
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+ }
+
+/* ======================================================/HEADER=============================================== */
+
 /* ===========================================================HEADER, FOOTER  LOGO============================== */
+
 .logo-web {
+margin-right:77px;
+
   color: var(--accent);
 
   font-family: 'Raleway', sans-serif;
@@ -122,7 +158,16 @@ img{
 }
 /* =============================================================/HEADER, FOOTER  LOGO============================================ */
 
-/*=============================================================SITE NAV============================================================ */
+/*===========================================================SITE NAV============================================================ */
+.site-nav{
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-item:not(:last-child){
+  margin-right: 40px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -147,17 +192,39 @@ img{
   line-height: var(--primary-line-height);
 }
 
+.site-address{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-adress-item:not(:last-child){
+  margin-right: 40px;
+}
+
 .site-address .link:focus,
 .site-address .link:hover {
   color: var(--accent);
 }
 /*=========================================================/SITE NAV====================================================== */
 
+
 /* ========================================================INDEX HERO===================================================== */
 .hero {
   background-color: var(--title-text-color);
 }
+
+.hero-container{
+padding-top: 192px;
+padding-bottom: 192px;
+}
+
 .hero-title {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 492px;
+  margin-bottom: 48px;
+
   color: var(--primary-background-color);
 
   font-weight: var(--secondary-font-weight);
@@ -167,8 +234,19 @@ img{
 }
 
 .hero-button {
+  display: block;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  border: none;
+
   color: var(--primary-background-color);
   background-color: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-family: var(--primary-font);
   font-weight: var(--secondary-font-weight);
@@ -190,9 +268,28 @@ img{
   background-color: #404bbf;
 }
 /* ================================================/INDEX HERO======================================== */
-
+.quality{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* ======================================================INDEX QUALITY============================================= */
+.container-quality{
+  display: flex;
+}
+
+.quality-list{
+  display: flex;
+}
+
+.quality-item:not(:last-child){
+margin-right:24px;
+}
+
+.container-quality-item{
+  max-width: 264px;
+}
+
 .quality-name {
   color: var(--title-text-color);
 
@@ -202,7 +299,31 @@ img{
 }
 /* =====================================================/INDEX QUALITY============================================ */
 
+/* ====================================================INDEX SERVICE============================================== */
+.service{
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+/* ==================================================/INDEX SERVICE============================================== */
+.service-title{
+  margin-bottom: 72px;
+}
+
+.container-service-list{
+  display: flex;
+  gap: 24px;
+}
 /* ====================================================INDEX TEAM============================================== */
+.team-title{
+  margin-bottom: 72px;
+}
+
+.container-team-list{
+  display: flex;
+  gap: 24px;
+}
+
+
 .service-title,
 .team-title {
   color: var(--title-text-color);
@@ -215,11 +336,22 @@ img{
 }
 
 .team {
+padding-top: 120px;
+padding-bottom: 120px;
+
   background-color: var(--team-background-color);
 }
 
 .team-item {
   background-color: var(--primary-background-color);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+
+.container-team-item{
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -227,16 +359,28 @@ img{
   font-size: var(--secondary-font-size);
   line-height: var(--secondary-line-height);
   text-align: center;
+
+  margin-bottom: 8px;
 }
 .team-name + .team-job {
   text-align: center;
 }
 /* ========================================================/INDEX TEAM====================================== */
 
+/* ====================================================PORTFOLIO CONTAINER=================================== */
+.portfolio{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+/* ===================================================/PORTFOLIO CONTAINER =================================*/
+
 /* ===============================================PORTFOLIO BUTTON FILTER ============================== */
 .button {
   background-color: var(--team-background-color);
   color: var(--accent);
+  border-radius: 4px;
+  border: none;
 
   font-family: var(--primary-font);
   font-style: normal;
@@ -255,11 +399,35 @@ img{
 .button:focus {
   color: var(--primary-background-color);
   background-color: var(--accent);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-list{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filter-button{
+  padding: 12px 24px;
 }
 /* =======================================================/PORTFOLIO BUTTON FILTER================================ */
 
 
 /* ======================================================PORTFOLIO ITEMS=====================================*/
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item{
+  flex-basis: calc((100%-48px)/3);
+}
+
 .portfolio-name {
   color: var(--title-text-color);
 
@@ -277,9 +445,19 @@ img{
 /* ============================================================F00TER================================================= */
 .footer {
   background-color: var(--title-text-color);
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
+.footer-text{
+  max-width: 264px;
+}
+
 
 .footer-text {
   color: var(--footer-text-color);
+
+  margin-top: 16px;
 }
 /* =========================================================/FOOTER================================================== */
