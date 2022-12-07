@@ -213,10 +213,9 @@ margin-right:77px;
   padding-bottom: 192px;
 
   background-color: var(--title-text-color);
-}
 
-.hero-container{
-
+    background-image: url("../images/index-background.jpg");
+      background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -289,6 +288,24 @@ margin-right:24px;
 
 .container-quality-item{
   max-width: 264px;
+}
+
+.quality-icon{
+  width: 100%;
+  height: 112px;
+
+  background-color: var(--team-background-color);
+
+  display:flex;
+ margin-bottom: 8px;
+ padding: auto;
+border-radius: 4px;
+align-items: center;
+justify-content: center;
+}
+
+.quality-svg{
+ 
 }
 
 .quality-name {
