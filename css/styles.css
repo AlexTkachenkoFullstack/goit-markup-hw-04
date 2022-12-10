@@ -82,7 +82,7 @@ img{
 /* цвет текста на страничках в портфолио #F4F4FD */
 /* белый #FFFFFF */
 
-/* ========================================================CONTEINER=============================================*/
+/* ========================================================CONTAINER=============================================*/
 .container{
 width: 1158px;
 margin: 0 auto;
@@ -474,7 +474,6 @@ border-color: var(--accent);
   fill: currentColor;
 }
 
-
 /* =====================================================/INDEX CUSTOMERS==================================== */
 
 /* ====================================================PORTFOLIO CONTAINER=================================== */
@@ -592,12 +591,6 @@ margin-right: 120px;
   color: var(--footer-text-color);
 }
 
-.footer-social-media {
-  height: 80px;
-  max-width: 208px;
-  margin-right: auto;
-  padding: 0px;
-}
 
 .footer-title-link {
 font-family: var(--primary-font);
